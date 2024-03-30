@@ -319,7 +319,11 @@
     <!-- Reproducible Builds -->
     <project.build.outputTimestamp>1670877034</project.build.outputTimestamp>
   </properties>
-
+<properties>
+  <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+  <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+  <sonar.language>java</sonar.language>
+</properties>
   <profiles>
     <!-- Profiles for Application Server -->
     <profile>
